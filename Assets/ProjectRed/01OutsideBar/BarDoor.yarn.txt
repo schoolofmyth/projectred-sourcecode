@@ -1,0 +1,26 @@
+title: BarDoor
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if $picked_up_card is false and $bouncer_gone is false>>
+Narrator: (It's... A door.)
+Narrator: (Oh did you wanna go inside or something?)
+Narrator: (Good luck with that.)
+<<endif>>
+
+<<if $picked_up_card is false and $bouncer_gone is true>>
+Narrator: (The bouncer is gone, but the door itself is still locked.)
+Narrator: (There's some kind of card reader device mounted here.)
+<<endif>>
+
+<<if $picked_up_card is true and $bouncer_gone is false>>
+Narrator: (You'd love to use that card you found on the door, but the giant creature glaring at the back of your neck... Is making it difficult.)
+<<endif>>
+
+<<if $bouncer_gone is true and $picked_up_card is true>>
+Narrator: (You wave the card around at door, hoping that the card reader picks it up.)
+<<move BarDoor away>>
+Narrator: (Nicely done!)
+<<endif>>
+===

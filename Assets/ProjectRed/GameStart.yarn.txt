@@ -1,0 +1,17 @@
+title: GameStart
+tags: 
+colorID: 0
+position: 540,260
+---
+Narrator: (Hey you! Press Spacebar.)
+Narrator: (Nice job.)
+Narrator: (Hey you did it again!)
+Narrator: (You see that figure in the bottom-left corner? That's Red.)
+Narrator: (Use WASD or the arrow keys to move him as he tries to locate and capture his bounty target, an alien named Jebels McNubnut.)
+Narrator: (When you're close to an item or person of interest, tap spacebar to interact with it.)
+Narrator: (When talking to people you'll often be presented with choices. Like these.)
+-> Click me!
+-> No click me!
+-> Please don't click me.
+Narrator: (Now you're ready to start the adventure.)
+===

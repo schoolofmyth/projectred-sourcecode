@@ -1,0 +1,85 @@
+title: Thug
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Thug") is false>>
+Narrator: (You approach the unscrupulous looking person.)
+Narrator: (Maybe they left their "scruples" at home?)
+Player: Hey.
+Thug: Yo, space boy, git out before the coppers show up!
+Thug: I ain't going back to the academy yet!
+Player: (... Oh boy.)
+<<else>>
+Player: Mind if I ask something?
+<<endif>>
+[[Thug.questions]]
+===
+title: Thug.leave
+tags: 
+colorID: 0
+position: 536,495
+---
+Thug: I'm a propa G-ster!
+Thug: Git out bug!
+<<stop>>
+===
+title: Thug.questions
+tags: 
+colorID: 0
+position: 801,493
+---
+<<if $met_bouncer is true and $talked_about_bouncer is false>>
+-> "That bouncer won't let me into the building."
+    Thug: Why do I care?
+    Narrator: (Good question.)
+    -> "You can't stand an authority figure blocking off access to ANYTHING, right?!"
+        Thug: Oh dang. Ya got me.
+    -> "He's your ex-boyfriend and NOW is the time to reignite that old flame."
+        Narrator: (A single tear streams down the alien's cheek.)
+        Thug: I've missed him so much.
+        Thug: WHY DID IT HAVE TO BE THIS WAY?
+    -> "He said you looked dumb."
+        Thug: ... Dead. He dead.
+    Thug: Be back in a minute.
+    <<blink BlackScreen>>
+    <<move Bouncer away>>
+    <<set $bouncer_gone to true>>
+    <<set $talked_about_bouncer to true>>
+    <<wait 3>>
+    Narrator: (A few minutes passed).
+    Narrator: (...You heard some screaming.)
+    Thug: He gone now, space boy.
+    Player: Ah.
+    <<stop>>
+-> "What's the Academy?"
+    Thug: Yeeah, the Academy. They sent me there after a soup job in '46.
+    Thug: I was on the nut at the time, absolutely broke. Glommed a bank to get some dough.
+    Narrator: (He finally notices the blank expression on your face.)
+    Thug: The Academy is the police station, knobhead.
+    Player: Ah, got it.
+    [[Thug.questions]]
+-> "Why are you in a trash can?"
+    Thug: You got a problem?
+    Thug: It's comfy up in here.
+    [[Thug.questions]]
+    -> (Leave)
+    [[Thug.leave]]
+-> (Leave)
+    [[Thug.leave]]
+<<else>>
+-> "The academy?"
+    Thug: Yeeah, the academy. They sent me there after a soup job in '46.
+    Thug: I was on the nut at the time, absolutely broke. Glommed a bank to get some dough.
+    Narrator: (He finally notices the blank expression on your face.)
+    Thug: The academy is the police station, knobhead.
+    Player: Ah, got it.
+    [[Thug.questions]]
+-> "Why are you in a trash can?"
+    Thug: You got a problem?
+    Thug: It's comfy up in here.
+    [[Thug.questions]]
+-> (Leave)
+    [[Thug.leave]]
+<<endif>>
+===

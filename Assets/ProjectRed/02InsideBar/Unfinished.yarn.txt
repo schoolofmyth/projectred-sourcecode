@@ -1,0 +1,12 @@
+title: Unfinished
+tags: 
+colorID: 0
+position: 540,260
+---
+Narrator: (Hey you made it.)
+Player: Woah.
+Narrator: (This is the end, for now.)
+Narrator: (Making a world from scratch is a lot of work, ya know?)
+Narrator: (Congrats on making it this far!)
+Narrator: (Thanks for playing our game!)
+===

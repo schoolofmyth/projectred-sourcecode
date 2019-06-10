@@ -1,0 +1,57 @@
+title: Alien
+tags: 
+colorID: 0
+position: 524,111
+---
+<<if visited("Alien") is false>>
+    Player: Hey.
+    Alien: Hello fellow human!
+    Alien: It is such a pleasure, to meet a fellow human. Like you!
+    Player: ...
+    Player: *something is telling you that this person might "not" be as human as they claim*
+<<else>>
+    Player: Hey there.
+    Alien: Hello again!
+<<endif>>
+
+<<if not visited("Alien.Watch")>>
+    [[Anything interesting going on around here?|Alien.Watch]]
+<<endif>>
+
+<<if $bouncer_warning is true and not visited("Alien.Sorry")>>
+    [[Are you sure you're human?|Alien.Sorry]]
+<<endif>>
+[[See you later.|Alien.Exit]]
+===
+title: Alien.Watch
+tags: 
+colorID: 0
+position: 512,430
+---
+Alien: Certainly!
+Alien: There are such wonderful attractions nearby, that any human such as myself or yourself would no doubt delight in witnessing!
+Alien: You should try talking to that giant turtle across the way!
+<<set $should_see_bouncer to true>>
+<<if visited("Bouncer") is true>>
+    Player: Already spoke to it.
+    Alien: Tell it I sent you!
+<<endif>>
+===
+title: Alien.Exit
+tags: 
+colorID: 6
+position: 211,417
+---
+Alien: I wave you goodbye with my HUMAN arms!
+===
+title: Alien.Sorry
+tags: 
+colorID: 0
+position: 827,439
+---
+Alien: ...
+Alien: What was that?
+Player: *You begin to feel incredibly uneasy.*
+Player: I was asking if you've heard of Randy Newman!
+Alien: I'm not a fan.
+===

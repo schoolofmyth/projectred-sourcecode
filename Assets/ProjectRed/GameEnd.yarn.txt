@@ -1,0 +1,15 @@
+title: GameEnd
+tags: 
+colorID: 0
+position: 540,260
+---
+Narrator: (We've reached the end.)
+Player: It ends here?
+Narrator: (Yeah. Congrats on making it here!)
+Narrator: (We appreciate that you took the time to play our silly game.)
+Garrett: "This is Garrett Kuroiwa, signing off."
+Javad: "Along with Javad Goudarzi,"
+Warisha: "and Warisha Soomro!"
+Garrett, Javad, and Warisha: "Bye for now!"
+-> If you wanna reset the game or explore a particular level, press [1] or [2] on the top of your keyboard to reload the respective area. 
+===

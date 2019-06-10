@@ -1,0 +1,10 @@
+title: BarArrive
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("BarArrive") is false>>
+Narrator: (You've made it inside the bar.)
+Narrator: (Jebels is in here... Somewhere.)
+<<endif>>
+===

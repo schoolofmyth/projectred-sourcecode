@@ -1,0 +1,53 @@
+title: Jebels
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Jebels") is false>>
+Narrator: (...)
+???: Took you long enough, Red.
+Player: ... Jebels McNubNut.
+Jebels: You've got that right.
+Jebels: We both know what will happen if you try to take me down while I'm wearing this armor.
+Jebels: Even just talking to me right now, you're taking a huge risk.
+Jebels: Lay a finger on me--
+Jebels: AND we'll BOTH get hit with a cease and desist for copyright infringement! INSTANTLY!
+Narrator: (...)
+<<else>>
+Jebels: Back again?
+Jebels: Better watch your step.
+<<endif>>
+    -> "I don't care! I'm taking you down!"
+        [[Jebels.fight]]
+    -> "Let's talk about this."
+        Jebels: What's there to talk about?
+        Jebels: How you utterly failed, by coming here with an outfit like THAT?
+        Jebels: YOU'RE already THIS close to getting sued for stealing the likeness of another iconic character.
+        Jebels: With me nearby, the clock is ticking until someone realizes and obliterates this ENTIRE WORLD.
+            -> "I'm gonna rip that armor off you!"
+                Jebels: NEVER!
+                [[Jebels.fight]]
+            -> "I'm walking away; let's not do this."
+                [[Jebels.leave]]
+    -> (Leave)
+        [[Jebels.leave]]
+===
+title: Jebels.leave
+tags: 
+colorID: 0
+position: 759,521
+---
+Jebels: That's right.
+Jebels: Back off, bounty hunter.
+<<stop>>
+===
+title: Jebels.fight
+tags: 
+colorID: 0
+position: 1062,239
+---
+Narrator: (You lunge at Jebels.)
+        Narrator: (You attempt to shove one of your wrist-activated stun rods (Yes you've had those.) through the weak spot on the back of his helmet.)
+        Narrator: (There's a flash of light --and...)
+        <<move SceneLoadCollision Jebels>>
+===

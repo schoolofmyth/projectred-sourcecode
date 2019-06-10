@@ -1,0 +1,30 @@
+title: Orbulon
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Orbulon") is false>>
+Player: Hey.
+Orbulon: H E L L O  HUMAN FRIEND
+Orbulon: I AM THE AMAZING ORBULON
+Narrator: (Amazing.)
+Orbulon: HOW ARE YOUR  H U M A N  PARTS FEELING TODAY?
+    -> "They're fine."
+        Orbulon: THAT IS GOOD
+        Orbulon: DO YOU WHAT YOU COULD DO TO C E L E B R A T E?
+    -> "I'm actually feeling a little under the weather."
+        Orbulon: I AM SORRY
+        Orbulon: DO YOU KNOW WHAT YOU COULD DO IN ORDER TO FEEL  B E T T E R?
+    -> "I... Don't know how to answer that."
+        Orbulon: IT IS ALRIGHT
+        Orbulon: DO YOU KNOW WHAT YOU COULD DO TO INCREASE YOUR  U N D E R S T A N D I N G?
+    Player: ...
+    -> PRESS [J] TO  D A N C E
+    -> PRESS [J] TO  D A N C E
+    -> PRESS [J] TO  D A N C E
+    -> PRESS [J] TO  D A N C E
+    Orbulon: YES
+    Orbulon: YOU HAVE CHOSEN WISELY FROM A WEALTH OF  O P T I O N S
+<<endif>>
+    Orbulon: PRESS [J] TO  D A N C E
+===

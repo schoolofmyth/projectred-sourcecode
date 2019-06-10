@@ -1,0 +1,14 @@
+title: PickBarCard
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("PickBarCard") is false>>
+Narrator: (You happen to notice a strange looking card on the ground.)
+Narrator: (This IS an adventure game, so you pocket it without a second thought.)
+<<setsprite BarCard Gone>>
+<<set $picked_up_card to true>>
+<<else>>
+Player: Nothing else over here.
+<<endif>>
+===

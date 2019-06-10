@@ -1,0 +1,64 @@
+title: Bouncer
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Bouncer") is false>>
+    Player: Hey there.
+    Bouncer: Hey.
+    Player: Would you mind letting me inside the bar?
+    Bouncer: Only if you've been verified.
+    Player: "Verified"?
+<<else>>
+    Player: Wanna let me in yet?
+<<endif>>
+<<set $met_bouncer to true>>
+Bouncer: We're only letting in VIPs at the moment.
+[[Bouncer.questions]]
+===
+title: Bouncer.leave
+tags: 
+colorID: 0
+position: 544,486
+---
+Bouncer: Is there a reason that you're wasting my time?
+Player: Uh...
+<<stop>>
+===
+title: Bouncer.questions
+tags: 
+colorID: 0
+position: 888,307
+---
+    -> "I'm a VIP."
+        Bouncer: Show me your ID.
+        <<if $picked_up_card is true>>
+        Narrator: (You show the bouncer the card you "borrowed" off the sidewalk.)
+        Bouncer: I don't know where you found that, but you should hand it over right now.
+        Player: I think I'll hold onto it.
+        Narrator: (He looks pretty frustrated!)
+        [[Bouncer.leave]]
+        <<endif>>
+        Narrator: (Time to come up with your best excuse.)
+        -> "I left it in my other pants."
+            Narrator: (The bouncer eyes you suspiciously.)
+            Bouncer: Come back when you've got the right pants then.
+        -> "I think my dog ate it."
+            Bouncer: ...
+            Narrator: (I don't think he liked that.)
+        -> "I don't 'believe' in identification."
+            Bouncer: Neat.
+        [[Bouncer.questions]]
+    -> "I can slip you some money if you let me through."
+        Bouncer: I will not be bribed.
+        Narrator: (So dutiful. Much loyal.)
+        [[Bouncer.questions]]
+    -> *Pet him*
+        Narrator: (You pet the bouncer: declaring that they are indeed, a good boy.)
+        Bouncer: ...
+        Player: ...
+        Bouncer: Let's pretend that didn't happen.
+        [[Bouncer.questions]]
+    -> (Leave)
+        [[Bouncer.leave]]
+===

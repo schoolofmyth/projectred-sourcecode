@@ -1,0 +1,17 @@
+title: BarGossip
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("BarGossip") is false>>
+Narrator: (These two are deep in conversation.)
+Narrator: (You listen in.)
+Birdup: --she did NOT!
+Shade: Yeah she totally did!
+Birdup: Oh my goooooosh.
+Narrator: (One of them notices you.)
+Shade: -_-
+<<else>>
+Narrator: (Probably best to let them be.)
+<<endif>>
+===

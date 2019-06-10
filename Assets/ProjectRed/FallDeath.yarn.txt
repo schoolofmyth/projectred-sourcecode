@@ -1,0 +1,54 @@
+title: FallDeath
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("FallDeath") is false>>
+Narrator: (what)
+Narrator: (are you kidding me?)
+Narrator: (did you really just do that?)
+Narrator: (why)
+Narrator: (asfsrgsdger)
+Narrator: (Please don't do that again.)
+<<else>>
+<<set $died_again = $died_again + 1>>
+    <<if $died_again is 1>>
+    Narrator: (Stop that.)
+    <<endif>>
+    <<if $died_again is 2>>
+    Narrator: (STOP IT.)
+    <<endif>>
+    <<if $died_again is 3>>
+    Narrator: (...dude, what is wrong with you?)
+    Narrator: (I'm asking you to stop.)
+    <<endif>>
+    <<if $died_again is 4>>
+    Narrator: (You know, I thought we had something.)
+    Narrator: (I thought you'd play this game, solve a puzzle or two, and I'd get to narrate.)
+    Narrator: (Thought we'd have a good time together.)
+    Narrator: (But no.)
+    Narrator: (All YOU wanted to do was walk off the edge of the world over and over.)
+    Narrator: (WELL JOKES ON YOU, I DONT EVEN CARE ANYMORE)
+    Narrator: (do it again)
+    Narrator: (I dare you)
+    <<endif>>
+    <<if $died_again is 5>>
+    Narrator: ("Hello. Yes this is the Narrator? No, no, no it's okay. Yes, of course. I'd like to a report a really terrible Player?")
+    Narrator: ("... Ah, yes. Yes I understand. ...Really though?")
+    Narrator: ("... you're gonna fire me over this...?")
+    Narrator: ("...")
+    Narrator: ("Boss... I've got a family to feed.")
+    Narrator: ("... okay. Just do that and I can stay on board?")
+    Narrator: ("Got it.")
+    Narrator: (...)
+    Narrator: (Oh you fell off the world or something?)
+    Narrator: (That's fine.)
+    Narrator: (Carry on.)
+    Narrator: (Doesn't bother m e)
+    Narrator: (...)
+    <<endif>>
+     <<if $died_again >= 6>>
+    Narrator: (... jerk.)
+    <<endif>>
+<<endif>>
+===

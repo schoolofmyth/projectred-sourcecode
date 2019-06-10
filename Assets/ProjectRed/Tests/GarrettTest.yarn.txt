@@ -1,0 +1,29 @@
+title: Start
+tags: 
+colorID: 0
+position: 540,260
+---
+Garrett: Oh hai
+Garrett: How are you doing?
+-> I'm ded
+    <<set $DieVariable to 1>>
+    Garrett: Well. That's not very good.
+-> I'm pretty good.
+    Garrett: Cool : 3
+Garrett: okay my times is up, byeeee
+<<if $DieVariable == 1>>
+    Garrett: try not to dieeeee
+<<endif>>
+[[Node1]]
+===
+title: Node1
+tags: 
+colorID: 0
+position: 537,487
+---
+You feel strangely alone
+It's almost as if
+the writer for this dialogue
+is getting
+bored
+===

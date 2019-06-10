@@ -1,0 +1,20 @@
+title: NinjaPirate
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("NinjaPirate") is false>>
+Narrator: (These two are clearly having some sort of argument...)
+Narrator: (You listen in...)
+Hacka: --AND I DONT WANNA HEAR ANOTHER WORD ABOUT--
+Shank: PIRATES ARE BETTER!
+Hacka: THEY ARE NOT!
+Shank: ARE TOO!
+HACKA: I LITERALLY HATE YOU
+Narrator: (...You decide to slip away.)
+Narrator: (Hey, is there something behind us?)
+<<else>>
+HACKA: I CANNOT EVEN WITH YOU
+SHANK: YAR HAR FIDDLE DEE DEE
+<<endif>>
+===

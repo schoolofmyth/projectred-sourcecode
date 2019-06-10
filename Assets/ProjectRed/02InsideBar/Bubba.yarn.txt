@@ -1,0 +1,34 @@
+title: Bubba
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Bubba") is false>>
+Narrator: (These people look approachable AND fun.)
+Player: Hey there.
+Bubba: H e l lo.
+Player: Do you mind if ask you some questions?
+Leafy: No!
+<<else>>
+Still got time for questions?
+<<endif>>
+Narrator: (The big alien pats its tummy and nods.)
+    -> "Ever heard of someone named Jebels?"
+        Bubba: N o.
+        Player: Too bad.
+        Narrator: (Interesting... Leafy looks nervous.)
+        Leafy: I didn't say this to you, but go ahead and check the back room!
+    -> "What are you doing here?"
+        Bubba: L e a fy  asked  m e  to come with  h i m.
+        Leafy: SHhh... Bubba! That's supposed to be a secret!
+        Bubba: I'm  s o rry.
+    -> "How many licks does it take to get to the center of a tootsie pop?"
+        Narrator: (Bubba looks deep into your eyes.)
+        Narrator: (You feel the universe spinning. Slowly, and slowly.)
+        Narrator: (The rhythmic hum of existence --pulses gently, ignorant of the pain of dying stars.)
+        Narrator: (Bubba's eyes... --glaze over.)
+        Player: Well, there's your answer.
+    -> (Leave)
+        Bubba: B Y e
+        Leafy: Good riddance!
+===

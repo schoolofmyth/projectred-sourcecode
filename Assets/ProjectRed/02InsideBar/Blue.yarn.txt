@@ -1,0 +1,30 @@
+title: Blue.Bar
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Blue.Bar") is false>>
+Narrator: (You can't help but notice the mysterious figure standing by the wall, wearing a significantly cooler outfit than you!)
+Blue: Hey you. Mind if I ask a question?
+<<else>>
+Blue: Got any time for some questions?
+<<endif>>
+-> "Sure?"
+    Blue: I'm looking for an alien that goes by the name Jebels.
+    <<setsprite Blue Gesture>>
+    Blue: Any idea where I could find them?
+    -> "I just saw them leave."
+        <<setsprite Blue Neutral>>
+        Blue: Thanks for the tip.
+        <<blink BlackScreen>>
+        <<move Blue Away>>
+        Narrator: (That was really manipulative!)
+        Narrator: (...I should let you know, you didn't ACTUALLY have to do that.)
+        <<stop>>
+    -> "Nope."
+        <<setsprite Blue Neutral>>
+        Blue: If you find them, give me a heads up.
+        Blue: I can offer compensation for any assistance.
+-> "I'm busy."
+    [[Blue.Exit]]
+===

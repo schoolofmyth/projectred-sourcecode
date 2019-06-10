@@ -1,0 +1,21 @@
+title: Cat?
+tags: 
+colorID: 0
+position: 540,260
+---
+<<if visited("Cat?") is false>>
+Narrator: (Awww, isn't it adorable?)
+Narrator: (It's a cat or something right?)
+Player: Hey little buddy.
+Narrator: (Tempted by the soft looking mane, you lean in to pet it.)
+<<setsprite Cat? Scary>>
+Cat?: You got a death wish pal?
+Cat?: Watch the fur.
+Player: ..Sorry!
+<<setsprite Cat? Neutral>>
+<<stop>>
+<<endif>>
+<<setsprite Cat? Scary>>
+Definitely Not A Cat: Umm, meow?
+<<setsprite Cat? Neutral>>
+===
